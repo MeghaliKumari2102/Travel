@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>feedback</title>
+    <style>
+        
+        p {
+    color: #fff;
+    text-align: left;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+       .optional {
+        margin: 10px;
+        border: 1px solid #5c5c5c;
+        height: 25px;  
+        border-radius: 3px;
+        background: #181717; 
+        padding: 0 15px;    
+        font-size: 20px; 
+        font-weight: 700;
+       }
+       *{
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+           outline: none;
+           color: #fff;
+       }
+       textarea{
+        border: 1px solid #5c5c5c;
+        border-radius: 3px;
+        background: #181717; 
+        width: 100%;   
+        font-weight: 800;
+       }
+       body{
+           display: flex;
+           min-height: 100vh;
+           align-items: center;
+           justify-content: center;
+       }
+       .container{
+           width: 360px;
+           margin: 0 auto;
+           margin-top: 40px;
+       }
+       
+       form{
+           width: 360px;
+           background: #000;
+           box-shadow: 0 0 8px rgba(250,250,250,250,0.6);
+           opacity: 0.6;
+           width: 100%;
+           text-align: center;
+           padding: 25px 20px;
+
+       }
+       h1{
+           margin-bottom: 20px;
+       }
+       #mnm{
+           text-align: left;
+       }
+       button{
+           margin-top: 5px;
+           border: none;
+           background: #00fff0;
+           color: #222;
+           padding: 10px 0px;
+           width: 100%;
+           font-size: 20px;
+           cursor: pointer;
+           border-radius: 3px;
+       }
+       section{
+           position: absolute;
+           width: 100%;
+           height: 100%;
+           background: url("https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80");
+           background-size: cover;
+           background-position: center;
+           filter: brightness(50%);
+           margin-top: 115px;
+       }
+       .container1{
+    width: 90%;
+    margin: 0 auto;
+   position: absolute;
+   top: 0;
+   margin-top: 10px;
+   
+}
+.navbar{
+    width:100%;
+  
+    display:flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-bottom: 10px;
+    
+}
+.navbar_logo{
+    width: 20%;
+}
+.logo_img{
+    width:100%;
+    height:5px;
+    width:15px;
+
+}
+.navbar input{
+    padding:7px;
+    border-radius: 15px;
+    font-size: 16px;
+   
+}
+.search{
+    padding: 10px 10px;
+    border-radius: 15px;
+    height:20px;
+    width:200px;
+
+    
+}
+.menu{
+    width:60%;
+}
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.menu ul li{
+    list-style-type: none;
+}
+.menu ul li a{
+    text-decoration: none;
+    color:rgb(61, 50, 50);
+    font-size: 20px;
+    font-weight: 600;
+}
+.menu ul li a:hover{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding:10px 0;
+    color:violet;
+    transition:300ms;
+}
+.contact{
+    padding:8px 20px;
+    background-color: gold;
+    border-radius: 5px;
+    color:black;
+    box-shadow: 0 2px 20px rgb(61, 50, 50);
+    cursor: pointer;
+}
+   </style>    
+
+</head>
+<body>
+
+    <section></section>
+    <div class="container1">
+        <!--navbar design-->
+        <div class="navbar">
+            <div class="logo">
+                <img src=" C:\Users\megha\Desktop\travellogo.png" alt=" logo" style="height:50px; width:80px;">
+            </div>
+            <div class="search">
+            <input type="text" placeholder="Type to search">
+        </div>
+       
+        <div class="menu">
+            <ul>
+                <li><a href="review.html">Reviews</a></li>
+                <li><a href="index.html">Destinations</a></li>
+                <li><a href="feedback.html">Feedbacks</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+               <li> <div class="contact"> 
+                   <a href="#" >Contact</a>
+                </div></li> 
+
+
+            </ul>
+           
+        </div>
+        </div>
+    <div class="container">
+       
+        <form>
+            <h1>Feedback</h1>
+            <P>How satisfied were you with our service?</P>
+            <div id="mnm">
+            <input type="radio" name="feed">
+            <label>Excellent</label><br>
+            <input type="radio" name="feed">
+            <label>Good</label><br>
+            <input type="radio" name="feed">
+            <label>Neutral</label><br>
+            <input type="radio" name="feed">
+            <label>poor</label>
+            </div>
+            <p>If you have specfic feedback, please write to us..</p>
+            <textarea rows="4" cols="50" placeholder="Write us here"></textarea><br>
+            <input class="optional" type="text" placeholder="Name(optional)">
+            <input class="optional" type="email" placeholder="Email(optional)""><br>
+            <input class="optional" type="number" placeholder="Mobile no(optional)""><br>
+            <button type="submit">Submit Feedback</button>
+
+        </form>
+    </div>
+</body>
+</html>
